@@ -14,14 +14,6 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
-  const refObj = {
-    introRef: createRef(),
-    aboutRef: createRef(),
-    projectRef: createRef(),
-    contactRef: createRef(),
-    skillsRef: createRef(),
-  }
-
   return (
     <>
       <Head>
@@ -31,7 +23,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='main-container'>
-        <Navbar refObj={refObj}/>
+
+        <Navbar    />
 
         <Intro     />
         <AboutMe   />
