@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
