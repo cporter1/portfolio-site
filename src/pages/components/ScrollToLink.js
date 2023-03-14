@@ -1,13 +1,11 @@
-import {forwardRef} from "react"
-
-export default function ScrollToLink({children, id}) {
+export default function ScrollToLink({children, id, className}) {
     const executeScroll = 
-        () => document.getElementById(id).scrollIntoView({block: 'end'})
+        () => { console.log(id);document.getElementById(id).scrollIntoView({block: 'end'})}
 
     return (
         <button 
             onClick={executeScroll} 
-            className='scrollto-link'>
+            className={className}>
             {children}
         </button>
     )
