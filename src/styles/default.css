@@ -1,10 +1,20 @@
 html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    background-color: rgb(119, 119, 168);
-    color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: rgb(119, 119, 168);
+  color: white;
+}
+* {
+  font-family: Product Sans;
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
 }
 
 h1,
@@ -15,11 +25,11 @@ ul {
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 button {
-    padding: 0.5rem 1rem;
-    font-weight: bold;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
 }
 

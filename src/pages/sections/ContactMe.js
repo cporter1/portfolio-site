@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { send } from 'emailjs-com'
-import ParagraphInput from "../components/ParagraphInput";
+import WarningPage from "../components/WarningPage";
 
 export default function ContactMe() {
 
@@ -13,18 +13,21 @@ export default function ContactMe() {
   function onSubmit(event) {
     event.preventDefault();
 
-    send(
-      process.env.NEXT_PUBLIC_SERVICE_ID,
-      process.env.NEXT_PUBLIC_TEMPLATE_ID,
-      emailContent,
-      process.env.NEXT_PUBLIC_PUBLIC_KEY,
-    )
-    .then((response) => {
-      console.log('success')
-    })
-    .catch(e => {
-      console.error('failed:', e)
-    })
+    // TODO: if any inputs are blank throw error
+    console.log('submitted')
+
+    // send(
+    //   process.env.NEXT_PUBLIC_SERVICE_ID,
+    //   process.env.NEXT_PUBLIC_TEMPLATE_ID,
+    //   emailContent,
+    //   process.env.NEXT_PUBLIC_PUBLIC_KEY,
+    // )
+    // .then((response) => {
+    //   console.log('success')
+    // })
+    // .catch(e => {
+    //   console.error('failed:', e)
+    // })
 
   }
 
@@ -47,14 +50,14 @@ export default function ContactMe() {
             <input
               type='text'
               name='sender_name'
-              placeholder='name'
+              placeholder='your name'
               value={emailContent.sender_name}
               onChange={handleChange}
             />
             <input
               type='text'
               name='sender_email'
-              placeholder='email'
+              placeholder='your email'
               value={emailContent.sender_email}
               onChange={handleChange}
             />
@@ -68,10 +71,13 @@ export default function ContactMe() {
             onChange={handleChange}
             
           />
-          <button className="contactme-submit-button" 
+          {/* <button className="contactme-submit-button" 
             type='submit'>
             Submit
-          </button>
+          </button> */}
+          <WarningPage>
+
+          </WarningPage>
         </form>
       </div>
     </section>
