@@ -16,11 +16,11 @@
 }
 
 .navbar-list {
-    display: flex;
+  display: flex;
 }
 
 .github-icon {
-    margin-right: 10px;
+    margin-right: 25px;
     padding: 33px;
     max-height: 50px;
     background-position: center;
@@ -43,8 +43,8 @@
 }
 
 .intro-container {
-    background: linear-gradient(180deg,transparent,#111 80vh),radial-gradient(#313131 1px,transparent 0) 0 0/20px 20px fixed,radial-gradient(#313131 1px,transparent 0) 10px 10px/20px 20px fixed;
-    background-color: rgb(119, 119, 168);
+    background: linear-gradient(180deg,transparent,#111 80vh),radial-gradient(#313131 .5px,transparent 0) 0 0/20px 20px fixed,radial-gradient(#313131 .5px,transparent 0) 10px 10px/20px 20px fixed;
+    background-color: rgb(79, 79, 150);
 
     min-height: 95vh;
     margin-top: 5vh;
@@ -97,6 +97,94 @@
 }
 
 .contactme-container {
-    background-color: cornflowerblue;
-    min-height: 95vh;
+  background-image: linear-gradient(19deg, #003371 0%, #49016a 100%);
+
+  min-height: 79vh;
+
+  display: flex;
+  flex-direction: column;
+  padding: 8vh;
+}
+
+.contactme-container > h2 {
+  text-align: center;
+  font-size: xxx-large;
+  margin-bottom: 10vh;
+  margin-top: 2vh;
+}
+
+.contactme-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    overflow: auto;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+.name-email-wrapper {
+  display: flex;
+  margin-bottom: 2%;
+}
+
+.cell-wrapper {
+  margin-top: 5vh;
+}
+
+.email-wrapper > h3, .cell-wrapper > h3 {
+  margin: 0;
+  padding: 0;
+  font-size: xx-large;
+}
+
+.cell-wrapper > text, .email-wrapper > text {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: x-large;
+}
+
+.name-email-wrapper > input {
+  height: 6vh;
+  border-radius: 5px;
+  border: none;
+  min-width: 48%;
+  font-size: x-large;
+  padding: 5px;
+}
+
+.name-email-wrapper > input:last-child {
+  display: block;
+  margin-left: auto;
+}
+
+.email-textarea {
+  height: 30vh;
+  border-radius: 5px;
+  border: none;
+  white-space: pre;
+  resize: none;
+  margin-bottom: 2vh;
+  font-size: xx-large;
+  padding: 5px;
+}
+
+.contactme-submit-button {
+  display: block;
+  width: fit-content;
+  border-radius: 5px;
+  border: none;
+  font-size: x-large;
+  color: white;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  cursor: pointer;
 }

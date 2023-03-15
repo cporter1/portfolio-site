@@ -13,7 +13,7 @@ export default function Navbar() {
         <li><ScrollToLink
               className='scrollto-link'
               id='about-section'>
-                About me
+                About Me
             </ScrollToLink></li>
         <li><ScrollToLink 
               className='scrollto-link'

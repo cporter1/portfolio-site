@@ -2,15 +2,14 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import { createRef, use, useRef } from 'react'
 
-import Intro from '@/Sections/Intro'
-import AboutMe from '@/Sections/AboutMe'
-import Projects from '../Sections/Projects'
-import Skills from '@/Sections/Skills'
-import ContactMe from '@/Sections/ContactMe'
+import Intro from '@/pages/sections/Intro'
+import AboutMe from '@/pages/sections/AboutMe'
+import Projects from './sections/Projects'
+import Skills from '@/pages/sections/Skills'
+import ContactMe from '@/pages/sections/ContactMe'
 
 import Navbar from './components/Navbar'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
