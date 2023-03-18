@@ -1,4 +1,3 @@
-
 .navbar-container {
     z-index: 1;
     position: fixed;
@@ -79,12 +78,126 @@
 }
 
 .intro-container > h1 {
-    margin-top: 200px;
+  margin-top: 200px;
 }
+
+.intro-container > h2 {
+  margin-top: 1rem;
+}
+
+/* ABOUT PAGE */
 
 .about-container {
   background-color: #1e344d;
-  min-height: 95vh;
+  min-height: 81vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4vh 4vh 10vh 4vh;
+}
+
+.about-container > h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4vh;
+}
+
+.about-grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 69vh;
+}
+
+.about-column1-container {
+  padding: 0 auto;
+  margin-right: 2vw;
+
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.paragraph-wrapper {
+  height: 100%;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.paragraph-wrapper > p, .paragraph-wrapper > h3 {
+  font-size: x-large;
+  margin-bottom: auto;
+  margin-left: auto;
+  width: 80%;
+}
+
+.paragraph-wrapper > h3 {
+  margin-top: 0;
+  font-size: x-large;
+  color: rgb(145, 145, 195);
+}
+
+.icon-wrapper {
+  width: 80%;
+  margin-left: auto;
+  display: flex;
+  max-height: 12vh;
+  max-width: 40vw;
+}
+
+.hobby-icon {
+  max-width: 30%;
+  max-height: 100%;
+}
+
+#soccer {
+  max-height: 75%;
+  max-width: 23%;
+  padding: 0;
+  margin: auto 12% auto auto;
+}
+
+.about-column2-container {
+  margin-left: 2vw;
+  display: flex;
+  justify-content: center;
+}
+
+.resume-wrapper {
+  display: flex;
+  margin-right: auto;
+  justify-content: center;
+  align-items: flex-start;
+  width: auto;
+  height: auto;
+  max-height: 70vh;
+  border-radius: 10px;
+}
+
+.resume {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+.resume-download-button {
+  display: block;
+  align-self: flex-start;
+  width: auto;
+  height: auto;
+  margin-left: 5px;
+  min-height: 4%;
+  min-width: 5%;
+
+  background-image: url(/download-icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .projects-container {
@@ -130,10 +243,12 @@
   flex-direction: column;
   justify-content: center;
   font-size: xx-large;
+  margin-left: 2%;
 }
 
 .name-email-wrapper {
   display: flex;
+  width: 100%;
   margin-bottom: 2%;
 }
 
@@ -159,7 +274,7 @@
   height: 6vh;
   border-radius: 5px;
   border: none;
-  min-width: 47.5%;
+  width: 49%;
   font-size: 1.5rem;
   padding: 5px;
   padding-left: 10px;
@@ -184,8 +299,7 @@ input:-webkit-autofill:active {
 }
 
 .name-email-wrapper > input:last-child {
-  display: block;
-  margin-left: auto;
+  margin-left: 2%;
 }
 
 .email-textarea {
@@ -209,7 +323,7 @@ input:-webkit-autofill:active {
   border: none;
   font-size: x-large;
   color: white;
-  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  background-image: linear-gradient(19deg, #21D4FD 0%, #1e344d 100%);
   cursor: pointer;
 }
 
