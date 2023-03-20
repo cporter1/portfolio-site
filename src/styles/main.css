@@ -175,6 +175,7 @@
   height: auto;
   max-height: 70vh;
   border-radius: 10px;
+
 }
 
 .resume {
@@ -183,16 +184,29 @@
   width: auto;
   height: auto;
   border-radius: 10px;
+  border-top-right-radius: 0;
+}
+
+.download-button-wrapper {
+  background-color: rgb(124, 124, 146);
+
+  min-height: 4%;
+  min-width: 5%;
+  padding-top: .2vh;
+  padding-right: .4vw;
+  padding-bottom: .2vh;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .resume-download-button {
   display: block;
-  align-self: flex-start;
   width: auto;
-  height: auto;
-  margin-left: 5px;
-  min-height: 4%;
-  min-width: 5%;
+  min-height: 3vh;
+  min-width: 2vw;
+  margin-left: 10%;
+  cursor: pointer;
 
   background-image: url(/download-icon.png);
   background-position: center;
