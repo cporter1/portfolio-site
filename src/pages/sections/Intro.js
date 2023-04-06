@@ -7,7 +7,11 @@ export default function Intro() {
       <ShapesAnimimation/>
 
       <h1>Welcome, my name is Colin Porter.</h1>
-      <h2><i>Frontend Software Engineer</i></h2>
+      <h2>
+        <i className="intro-description">
+          Frontend Software Engineer
+        </i>
+      </h2>
 
       <div className="intro-options-wrapper">
         <ScrollToLink id='about-section'   className='scrollto-resume'   >Resume</ScrollToLink>

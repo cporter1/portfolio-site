@@ -1,7 +1,3 @@
-/* :root {
-  --base-color: #1e344d;
-} */
-
 html, body {
   margin: 0;
   padding: 0;
@@ -9,6 +5,7 @@ html, body {
   scroll-behavior: smooth;
   background-color: rgb(119, 119, 168);
   color: white;
+  overflow-x: hidden;
 }
 * {
   font-family: Product Sans;

@@ -26,7 +26,7 @@ export default function AboutMe(props) {
         <div className="about-column1-container">
           <div className='paragraph-wrapper'>
             <p id='top'>
-              Hello, my name is Colin Porter and I am a full stack software engineer with a specialty in frontend.
+              Hello, my name is Colin Porter and I am a full stack software engineer with a focus in frontend.
             </p>
             <p>I have 4+ years of experience building intuitive and feature rich production web applications.</p>
             <p>I have a passion for producing dynamic applications that put the user experience at the forefront of development.</p>
