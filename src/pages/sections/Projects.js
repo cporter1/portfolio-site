@@ -6,8 +6,8 @@ export default function Project() {
             <div className="projects-wrapper">
                 <div className="grid-row">
                     <div className="project-info">
-                        <h2>PROJECT NAME</h2>
-                        <h3>TECH STACK</h3>
+                        <h2>Ethereum Validator</h2>
+                        <h3>Goerli Testnet, Linux Server, Intel NUC</h3>
                     </div>
                     <div className="project-banner-1">
                     

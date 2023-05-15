@@ -15,11 +15,11 @@ export default function Navbar() {
               id='about-section'>
                 About Me
             </ScrollToLink></li>
-        <li><ScrollToLink 
+        {/* <li><ScrollToLink 
               className='scrollto-link'
               id='projects-section'>
                 Projects
-            </ScrollToLink></li>
+            </ScrollToLink></li> */}
         <li><ScrollToLink 
               className='scrollto-link'
               id='skills-section'>
