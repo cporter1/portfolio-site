@@ -44,6 +44,6 @@ export default function WarningPage({handleTask, children}) {
         </div>
         <div className="popup-bg" id='popup-bg' 
             onClick={() => handleConfirmationBox()}/>
-      </>
+      </> 
     )
 }
