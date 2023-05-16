@@ -385,6 +385,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     overflow: auto;
+    overflow-x: hidden
 }
 
 .info-container {
