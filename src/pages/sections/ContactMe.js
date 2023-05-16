@@ -73,7 +73,7 @@ export default function ContactMe() {
           />
         </form>
         <div/>
-        <WarningPage/>
+        <WarningPage handleTask={onSubmit}/>
       </div>
     </section>
   )

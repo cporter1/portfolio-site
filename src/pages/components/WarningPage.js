@@ -37,7 +37,7 @@ export default function WarningPage({handleTask, children}) {
             <button 
               className="confirmation-button"
               type="submit"
-              onClick={handleConfirmationBox}>
+              onClick={(event) => {handleConfirmationBox(); handleTask()}}>
               Yes
             </button>
           </div>
