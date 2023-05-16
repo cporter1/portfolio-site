@@ -14,7 +14,7 @@ export default function ContactMe() {
     event.preventDefault();
 
     // // TODO: if any inputs are blank throw error
-    console.log('submitted')
+    // console.log('submitted')
 
     send(
       process.env.NEXT_PUBLIC_SERVICE_ID,

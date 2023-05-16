@@ -111,6 +111,7 @@
     font-size: .8rem;
   }
   .name-email-wrapper > input::placeholder,
+  .name-email-wrapper > input,
   .email-textarea::placeholder,
   .contactme-submit-button {
     font-size: 1rem;
@@ -125,6 +126,7 @@
     font-size: .6rem;
   }
   .name-email-wrapper > input::placeholder,
+  .name-email-wrapper > input,
   .email-textarea::placeholder,
   .contactme-submit-button {
     font-size: .7rem;
@@ -139,6 +141,7 @@
     font-size: .5rem;
   }
   .name-email-wrapper > input::placeholder,
+  .name-email-wrapper > input,
   .email-textarea::placeholder,
   .contactme-submit-button {
     font-size: .5rem;
@@ -153,6 +156,7 @@
     font-size: .4rem;
   }
   .name-email-wrapper > input::placeholder,
+  .name-email-wrapper > input,
   .email-textarea::placeholder,
   .contactme-submit-button {
     font-size: .4rem;
