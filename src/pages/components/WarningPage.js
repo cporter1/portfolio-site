@@ -22,7 +22,7 @@ export default function WarningPage({handleTask, children}) {
       <>  
         <button className='contactme-submit-button'
           onClick={() => {handleConfirmationBox()}} >
-                Submit
+            Submit
         </button>
         <div className="popup-container" id='popup-page'>
           <div className="confirmation-text">

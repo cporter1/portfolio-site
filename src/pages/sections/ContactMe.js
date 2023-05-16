@@ -13,21 +13,21 @@ export default function ContactMe() {
   function onSubmit(event) {
     event.preventDefault();
 
-    // TODO: if any inputs are blank throw error
+    // // TODO: if any inputs are blank throw error
     console.log('submitted')
 
-    // send(
-    //   process.env.NEXT_PUBLIC_SERVICE_ID,
-    //   process.env.NEXT_PUBLIC_TEMPLATE_ID,
-    //   emailContent,
-    //   process.env.NEXT_PUBLIC_PUBLIC_KEY,
-    // )
-    // .then((response) => {
-    //   console.log('success')
-    // })
-    // .catch(e => {
-    //   console.error('failed:', e)
-    // })
+    send(
+      process.env.NEXT_PUBLIC_SERVICE_ID,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID,
+      emailContent,
+      process.env.NEXT_PUBLIC_PUBLIC_KEY,
+    )
+    .then((response) => {
+      console.log('success')
+    })
+    .catch(e => {
+      console.error('failed:', e)
+    })
 
   }
 
@@ -71,14 +71,9 @@ export default function ContactMe() {
             onChange={handleChange}
             
           />
-          {/* <button className="contactme-submit-button" 
-            type='submit'>
-            Submit
-          </button> */}
-          <WarningPage>
-
-          </WarningPage>
         </form>
+        <div/>
+        <WarningPage/>
       </div>
     </section>
   )
