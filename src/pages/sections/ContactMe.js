@@ -35,6 +35,14 @@ export default function ContactMe() {
     setEmailContent({ ...emailContent, [event.target.name]: event.target.value })
   }
 
+  function clearFields() {
+    setEmailContent({
+      sender_name: '',
+      sender_email: '',
+      message: '',
+    })
+  }
+
   return (
     <section id='contact-section' className="contactme-container">
       <h2>CONTACT ME</h2>
@@ -73,7 +81,11 @@ export default function ContactMe() {
           />
         </form>
         <div/>
-        <WarningPage handleTask={onSubmit}/>
+          <div className="button-container">
+            <WarningPage handleTask={onSubmit} clearFields={clearFields}/>
+            <button className="contactme-cancel-button"
+              onClick={clearFields}>Clear</button>
+          </div>
       </div>
     </section>
   )

@@ -472,9 +472,13 @@ input:-webkit-autofill:active {
   outline-width: 0;
 }
 
-.contactme-submit-button {
-  display: block;
-  width: fit-content;
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactme-submit-button, .contactme-cancel-button {
+  width: auto;
   border-radius: 5px;
   border: none;
   font-size: x-large;
@@ -482,6 +486,10 @@ input:-webkit-autofill:active {
   background-image: linear-gradient(19deg, #21D4FD 0%, #1e344d 100%);
   cursor: pointer;
   margin-left: 3%;
+}
+
+.contactme-cancel-button {
+  background-image: linear-gradient(19deg, #ffffff 0%, #4d1e1e 100%); 
 }
 
 .popup-container {
@@ -507,12 +515,6 @@ input:-webkit-autofill:active {
   margin: 0.5rem 0 2rem;
   line-height: 2rem;
   font-size: 1.1rem;
-}
-
-.button-container {
-  display: flex;
-  margin-top: auto;
-  justify-content: space-between;
 }
 
 .confirmation-button {
