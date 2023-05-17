@@ -23,7 +23,7 @@ export default function ContactMe() {
       process.env.NEXT_PUBLIC_PUBLIC_KEY,
     )
     .then((response) => {
-      console.log('success')
+      clearFields()
     })
     .catch(e => {
       console.error('failed:', e)
