@@ -26,9 +26,9 @@ export default function AboutMe(props) {
         <div className="about-column1-container">
           <div className='paragraph-wrapper'>
             <p id='top'>
-              Hello, my name is Colin Porter and I am a full stack software engineer with a focus in frontend.
+              Hello, my name is Colin Porter and I am a IT specialist and full stack software engineer.
             </p>
-            <p>I have 4+ years of experience building intuitive and feature rich production web applications.</p>
+            <p>I have 4+ years of experience building and configuring IOS, Windows, and Linux machines.</p>
             <p>I have a passion for producing dynamic applications that put the user experience at the forefront of development.</p>
             <p>I am currently job hunting, send me a message if you think I&apos;d be a good fit on your company.</p>
             <h3><i>A little bit more...</i></h3>
@@ -43,7 +43,6 @@ export default function AboutMe(props) {
         <div className="about-column2-container">
           <div className='resume-wrapper'>
             <Image className='resume' src={resume} alt=''/>
-
             <div className='download-button-wrapper'>
               <div onClick={downloadResume} className='resume-download-button'/>
             </div>

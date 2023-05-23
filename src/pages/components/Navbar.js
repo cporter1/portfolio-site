@@ -23,7 +23,7 @@ export default function Navbar() {
         <li><ScrollToLink 
               className='scrollto-link'
               id='skills-section'>
-                Skills
+                Software Skills
               </ScrollToLink></li>
         <li><ScrollToLink 
               className='scrollto-link'
