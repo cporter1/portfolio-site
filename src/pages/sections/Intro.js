@@ -9,7 +9,7 @@ export default function Intro() {
       <h1>Welcome, my name is Colin Porter.</h1>
       <h2>
         <i className="intro-description">
-          IT Specialist & Software Engineer
+          Software Engineer
         </i>
       </h2>
 
