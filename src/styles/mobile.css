@@ -101,6 +101,20 @@
   }
 }
 
+@media screen and (max-width: 1050px) {
+  .skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .skills-list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
 /* contact me page */
 
 @media screen and (max-width: 1100px) {

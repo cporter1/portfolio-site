@@ -309,6 +309,7 @@
 .skills-grid-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5%;
   height: 69vh;
 }
 
@@ -324,12 +325,10 @@
 }
 
 .skills-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 0;
   height: 100%;
-  margin: auto;
 }
 
 .soft-skills > h3 {
